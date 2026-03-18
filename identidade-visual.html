@@ -1,65 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Identidade Visual - Miranda Studio</title>
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=agrandir@400,700,800,900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
-<header id="hdr" class="fixa">
-  <div class="wrap">
-    <a href="../index.html" class="logo">Miranda<span class="logo-dot">.</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html#sobre">Sobre</a></li>
-      <li><a href="../index.html#especialidades">Especialidades</a></li>
-      <li><a href="../index.html#categorias">Serviços</a></li>
-      <li><a href="../index.html#feedback">Resultados</a></li>
-      <li><a href="../index.html#contato">Contato</a></li>
-    </ul>
-    <div class="nav-right">
-      <a href="../index.html#contato" class="nav-cta">Solicitar Projeto</a>
-    </div>
-  </div>
-</header>
-
-<section id="hero" style="min-height:60vh; padding-top:100px; display:flex; align-items:center; text-align:center;">
-  <div class="wrap">
-    <div class="hero-badge" style="margin-bottom:1rem;">Serviço Exclusivo</div>
-    <h1 class="hero-h1" style="font-size: clamp(2.5rem, 6vw, 5rem);">Identidade Visual</h1>
-    <p class="hero-desc" style="margin: 1rem auto; max-width:600px;">
-      Sua marca tem uma essência única — e ela merece um visual à altura. Desenvolvemos sistemas de identidade completos que vão do logo à linguagem visual.
-    </p>
-    <a href="../index.html#contato" class="btn btn-creme" style="margin-top:1rem;">Solicitar Orçamento</a>
-  </div>
-</section>
-
-<section style="padding: 4rem 0; background: #fff;">
-  <div class="wrap">
-    <h2 class="h2" style="margin-bottom: 2rem;">O que está incluso</h2>
-    <ul class="scard-list" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
-      <li>Logo principal, variações e versão monocromática</li>
-      <li>Paleta de cores estratégica</li>
-      <li>Definição de tipografia e fontes</li>
-      <li>Guia de uso da marca (Brandbook)</li>
-      <li>Aplicações em papelaria e templates digitais</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap footer-inner">
-    <div class="footer-base">
-      <div class="footer-base-row">
-        <p>© 2026 <strong>Miranda Studio Criativo</strong>.</p>
-        <p><a href="../index.html">Voltar ao início</a></p>
+  <!-- HEADER (Igual à home) -->
+  <header id="hdr">
+    <div class="wrap">
+      <a href="index.html" class="logo">Miranda<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#categorias">Serviços</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contato" class="nav-cta">Solicitar Projeto</a>
       </div>
     </div>
-  </div>
-</footer>
+  </header>
 
+  <main>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero-text" data-sr="up">
+          <h1 class="hero-h1">Identidade Visual</h1>
+          <p class="hero-desc">O processo estratégico e criativo para dar vida à essência da sua marca.</p>
+          <div class="page-hero-btns">
+            <a href="#detalhes" class="btn btn-creme">Ver Processo <i class="ph-bold ph-arrow-down"></i></a>
+          </div>
+        </div>
+        <div class="page-hero-visual" data-sr="right">
+          <img src="https://i.ibb.co/S7QXYBwk/In-Shot-20260313-190246511-jpg.jpg" alt="Amostra de Identidade Visual">
+        </div>
+      </div>
+    </section>
+
+    <!-- DETALHES -->
+    <section id="detalhes" class="cat-detail-wrap">
+      <div class="wrap">
+
+        <header class="cat-header" data-sr="up">
+          <span class="cat-eyebrow">O coração da sua marca</span>
+          <h2 class="cat-title-big">Estratégia & Criação</h2>
+          <p class="cat-intro-text">
+            A Identidade Visual é o coração da sua marca. Por ser um processo estratégico e criativo denso, requer total colaboração para traduzir seus valores em imagem.
+          </p>
+        </header>
+
+        <!-- INFO CARDS -->
+        <div class="cat-info-grid" data-stag>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph-fill ph-package"></i></div>
+            <h3 class="cat-card-title">O que está incluso</h3>
+            <p class="cat-card-p">Logotipo principal, variações de logo, paleta de cores institucional, tipografia exclusiva e manual da marca (conforme pacote contratado).</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph-fill ph-hourglass"></i></div>
+            <h3 class="cat-card-title">Dinâmica de Prazo</h3>
+            <p class="cat-card-p">O cronograma é estabelecido no início, mas pode sofrer alterações caso haja demora no envio do briefing, referências ou documentos solicitados.</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph-fill ph-target"></i></div>
+            <h3 class="cat-card-title">Alinhamento</h3>
+            <p class="cat-card-p">A falta de clareza nas informações iniciais pode pausar o projeto até que haja um novo alinhamento estratégico para garantir o melhor resultado.</p>
+          </div>
+        </div>
+
+        <!-- FLUXO -->
+        <div class="cat-process" data-sr="up">
+          <h2 class="cat-sec-title">Fluxo de Trabalho (Passo a Passo)</h2>
+          <div class="cat-steps" data-stag>
+            <div class="cat-step">
+              <div class="cat-step-num">1</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Conversa Inicial</h4>
+                <p class="cat-step-desc">Momento de entender suas expectativas, os detalhes do serviço, o negócio e alinhamento de pagamento.</p>
+              </div>
+            </div>
+            <div class="cat-step">
+              <div class="cat-step-num">2</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Envio de Materiais</h4>
+                <p class="cat-step-desc">Você nos envia as informações e documentações detalhadas necessárias para o início da criação.</p>
+              </div>
+            </div>
+            <div class="cat-step">
+              <div class="cat-step-num">3</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Briefing & Avaliação</h4>
+                <p class="cat-step-desc">Fase de criação onde apresentamos as propostas. Aqui você aprova ou sugere melhorias. Novos acordos podem ser feitos até chegarmos à versão ideal.</p>
+              </div>
+            </div>
+            <div class="cat-step">
+              <div class="cat-step-num">4</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Reta Final & Conclusão</h4>
+                <p class="cat-step-desc">Com tudo aprovado, finalizamos os arquivos e realizamos a entrega oficial dos serviços prestados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONDIÇÕES -->
+        <div class="cat-conditions" data-sr="up">
+          <div>
+            <div class="cond-item">
+              <h4 class="cond-title">Confirmação e Início</h4>
+              <p class="cond-desc">O início do processo de criação acontece mediante o pagamento de 100% do valor do serviço.</p>
+            </div>
+          </div>
+          <div>
+            <div class="cond-item">
+              <h4 class="cond-title">Política de Cancelamento</h4>
+              <p class="cond-desc">
+                <strong>Antecipado:</strong> Reembolso integral (100%) antes do início da criação.<br>
+                <strong>Em Andamento:</strong> Reembolso de 50% para cobrir horas trabalhadas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GALERIA -->
+        <div class="gallery-section" data-sr="up">
+            <h2 class="cat-sec-title">Portfólio Selecionado</h2>
+            <div class="cat-gallery" data-stag>
+                <img src="https://i.ibb.co/S7QXYBwk/In-Shot-20260313-190246511-jpg.jpg" alt="Identidade Visual 1" class="cat-gallery-img">
+                <img src="https://i.ibb.co/0VpNmGG9/Screenshot-20260312-162029-Instagram-jpg.jpg" alt="Identidade Visual 2" class="cat-gallery-img">
+                <img src="https://i.ibb.co/DDchtzNb/IMG-20260312-161829-533-jpg.jpg" alt="Identidade Visual 3" class="cat-gallery-img">
+                <img src="https://i.ibb.co/QF5Q9d4z/IMG-20260312-161738-616-jpg.jpg" alt="Identidade Visual 4" class="cat-gallery-img">
+                <img src="https://i.ibb.co/0VcSPx32/In-Shot-20260124-142003740-jpg-1.jpg" alt="Identidade Visual 5" class="cat-gallery-img">
+                <img src="https://i.ibb.co/vCzLZ7tg/IMG-20260312-161821-741-jpg.jpg" alt="Identidade Visual 6" class="cat-gallery-img">
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="index.html#contato" class="btn btn-primary">Quero minha Identidade Visual</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner wrap">
+      <div class="footer-base">
+        <div class="footer-base-row">
+          <p>© 2026 <strong>Miranda Studio</strong>. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Animação simples de scroll caso o script principal não carregue
+    const sr = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) { entry.target.classList.add('vis'); sr.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-sr], [data-stag]').forEach(el => sr.observe(el));
+  </script>
 </body>
 </html>
