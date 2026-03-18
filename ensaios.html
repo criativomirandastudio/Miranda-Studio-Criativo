@@ -1,64 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ensaios com IA - Miranda Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ensaios Digitais (IA) - Miranda Studio</title>
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=agrandir@400,700,800,900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
-<header id="hdr" class="fixa">
-  <div class="wrap">
-    <a href="../index.html" class="logo">Miranda<span class="logo-dot">.</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html#sobre">Sobre</a></li>
-      <li><a href="../index.html#especialidades">Especialidades</a></li>
-      <li><a href="../index.html#categorias">Serviços</a></li>
-      <li><a href="../index.html#feedback">Resultados</a></li>
-      <li><a href="../index.html#contato">Contato</a></li>
-    </ul>
-    <div class="nav-right">
-      <a href="../index.html#contato" class="nav-cta">Solicitar Projeto</a>
-    </div>
-  </div>
-</header>
-
-<section id="hero" style="min-height:60vh; padding-top:100px; display:flex; align-items:center; text-align:center;">
-  <div class="wrap">
-    <div class="hero-badge" style="margin-bottom:1rem;">Inovação & Estética</div>
-    <h1 class="hero-h1" style="font-size: clamp(2.5rem, 6vw, 5rem);">Ensaios com IA</h1>
-    <p class="hero-desc" style="margin: 1rem auto; max-width:600px;">
-      Imagens que parecem campanha — sem estúdio, sem deslocamento. Cada cena é escolhida para revelar o melhor da sua presença com tecnologia de ponta.
-    </p>
-    <a href="../index.html#contato" class="btn btn-creme" style="margin-top:1rem;">Agendar Ensaio</a>
-  </div>
-</section>
-
-<section style="padding: 4rem 0; background: #fff;">
-  <div class="wrap">
-    <h2 class="h2" style="margin-bottom: 2rem;">Detalhes do Pacote</h2>
-    <ul class="scard-list" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
-      <li>Direção criativa exclusiva com conceito e moodboard</li>
-      <li>Geração de imagens de alta resolução com IA</li>
-      <li>Pós-produção e tratamento fino de pele e luz</li>
-      <li>Entrega de arquivos prontos para Instagram e Site</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap footer-inner">
-    <div class="footer-base">
-      <div class="footer-base-row">
-        <p>© 2026 <strong>Miranda Studio Criativo</strong>.</p>
-        <p><a href="../index.html">Voltar ao início</a></p>
+  <header id="hdr">
+    <div class="wrap">
+      <a href="index.html" class="logo">Miranda<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#categorias">Serviços</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="index.html#contato" class="nav-cta">Solicitar Projeto</a>
       </div>
     </div>
-  </div>
-</footer>
+  </header>
 
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero-text" data-sr="up">
+          <h1 class="hero-h1">Ensaios Digitais</h1>
+          <p class="hero-desc">Fotografia de alta estética sem limites físicos, criada com Inteligência Artificial.</p>
+          <div class="page-hero-btns">
+            <a href="#detalhes" class="btn btn-creme">Ver Detalhes <i class="ph-bold ph-arrow-down"></i></a>
+          </div>
+        </div>
+        <div class="page-hero-visual" data-sr="right">
+          <img src="https://i.ibb.co/R4yHwhPr/In-Shot-20260310-144407772-jpg.jpg" alt="Amostra de Ensaio Digital com IA">
+        </div>
+      </div>
+    </section>
+
+    <section id="detalhes" class="cat-detail-wrap">
+      <div class="wrap">
+
+        <header class="cat-header" data-sr="up">
+          <span class="cat-eyebrow">Conceito e Tecnologia</span>
+          <h2 class="cat-title-big">O futuro da fotografia</h2>
+          <p class="cat-intro-text">
+            Transformamos conceitos em realidade visual através de Inteligência Artificial de última geração. Sem agendamento de estúdio, sem logística, apenas criatividade pura.
+          </p>
+        </header>
+
+        <div class="cat-info-grid" data-stag>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph-fill ph-camera"></i></div>
+            <h3 class="cat-card-title">O que está incluso</h3>
+            <p class="cat-card-p">Criação de fotos realistas, cenários imersivos ou personagens digitais baseados no seu nicho e posicionamento de marca.</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph-fill ph-paper-plane-tilt"></i></div>
+            <h3 class="cat-card-title">Processo de Entrega</h3>
+            <p class="cat-card-p">Após a definição do conceito na conversa inicial, as imagens são geradas, tratadas e enviadas para sua curadoria.</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph-fill ph-check-circle"></i></div>
+            <h3 class="cat-card-title">Aprovação</h3>
+            <p class="cat-card-p">Por ser um serviço tecnológico, o refinamento é feito em cima do feedback direto do cliente sobre as primeiras amostras geradas.</p>
+          </div>
+        </div>
+
+        <div class="cat-process" data-sr="up">
+          <h2 class="cat-sec-title">Fluxo de Trabalho (Passo a Passo)</h2>
+          <div class="cat-steps" data-stag>
+            <div class="cat-step">
+              <div class="cat-step-num">1</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Conversa Inicial</h4>
+                <p class="cat-step-desc">Momento de entender suas expectativas, os detalhes do serviço, o negócio e alinhamento de pagamento.</p>
+              </div>
+            </div>
+            <div class="cat-step">
+              <div class="cat-step-num">2</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Envio de Materiais</h4>
+                <p class="cat-step-desc">Você nos envia as informações e documentações detalhadas necessárias para o início da criação.</p>
+              </div>
+            </div>
+            <div class="cat-step">
+              <div class="cat-step-num">3</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Briefing & Avaliação</h4>
+                <p class="cat-step-desc">Fase de criação onde apresentamos as propostas. Aqui você aprova ou sugere melhorias. Novos acordos podem ser feitos até chegarmos à versão ideal.</p>
+              </div>
+            </div>
+            <div class="cat-step">
+              <div class="cat-step-num">4</div>
+              <div class="cat-step-body">
+                <h4 class="cat-step-name">Reta Final & Conclusão</h4>
+                <p class="cat-step-desc">Com tudo aprovado, finalizamos os arquivos e realizamos a entrega oficial dos serviços prestados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-conditions" data-sr="up">
+          <div>
+            <div class="cond-item">
+              <h4 class="cond-title">Investimento Seguro</h4>
+              <p class="cond-desc">Início mediante pagamento de 100% do valor do serviço.</p>
+            </div>
+          </div>
+          <div>
+            <div class="cond-item">
+              <h4 class="cond-title">Cancelamento</h4>
+              <p class="cond-desc">
+                Reembolso integral (100%) se cancelado antes da criação.<br>
+                Reembolso de 50% caso o projeto já esteja em andamento.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-section" data-sr="up">
+            <h2 class="cat-sec-title">Ensaios Recentes</h2>
+            <div class="cat-gallery" data-stag>
+                <img src="https://i.ibb.co/R4yHwhPr/In-Shot-20260310-144407772-jpg.jpg" alt="Ensaio IA 1" class="cat-gallery-img">
+                <img src="https://i.ibb.co/9QJRrmS/In-Shot-20260306-213311683-jpg.jpg" alt="Ensaio IA 2" class="cat-gallery-img">
+                <img src="https://i.ibb.co/Vc8mbmzY/In-Shot-20260313-185908096-jpg.jpg" alt="Ensaio IA 3" class="cat-gallery-img">
+                <img src="https://i.ibb.co/vxVPWX4L/IMG-20260312-162647-471-jpg.jpg" alt="Ensaio IA 4" class="cat-gallery-img">
+                <img src="https://i.ibb.co/d4G7vdMn/IMG-20260312-162642-745-jpg.jpg" alt="Ensaio IA 5" class="cat-gallery-img">
+                <img src="https://i.ibb.co/Xr3f9nQD/IMG-20260312-162613-002-jpg.jpg" alt="Ensaio IA 6" class="cat-gallery-img">
+                <img src="https://i.ibb.co/hxhqbQYL/In-Shot-20260313-011916989-jpg.jpg" alt="Ensaio IA 7" class="cat-gallery-img">
+                <img src="https://i.ibb.co/5gJtXkZ7/In-Shot-20260312-171316416-jpg.jpg" alt="Ensaio IA 8" class="cat-gallery-img">
+                <img src="https://i.ibb.co/NdVQx2Z7/In-Shot-20260311-230850328-jpg.jpg" alt="Ensaio IA 9" class="cat-gallery-img">
+                <img src="https://i.ibb.co/vx8FPtSM/In-Shot-20260312-162448327-jpg.jpg" alt="Ensaio IA 10" class="cat-gallery-img">
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+          <a href="index.html#contato" class="btn btn-coral">Quero meu Ensaio Digital</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner wrap">
+      <div class="footer-base">
+        <div class="footer-base-row">
+          <p>© 2026 <strong>Miranda Studio</strong>. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const sr = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) { entry.target.classList.add('vis'); sr.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-sr], [data-stag]').forEach(el => sr.observe(el));
+  </script>
 </body>
 </html>
