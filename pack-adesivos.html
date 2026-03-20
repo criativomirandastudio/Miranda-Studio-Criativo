@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pack de Adesivos Digitais — Miranda Studio</title>
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=agrandir@400,700,800,900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <style>
+    /* Estilos do Slider de Imagens */
+    .sp-slider-wrap {
+      margin-top: 2rem;
+      width: 100%;
+      position: relative;
+    }
+    .sp-slider {
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 1rem 0.5rem 2rem 0.5rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Firefox */
+    }
+    .sp-slider::-webkit-scrollbar { display: none; /* Chrome/Safari */ }
+    
+    .sp-slide-item {
+      flex: 0 0 85%; /* Mobile: mostra 85% da imagem */
+      scroll-snap-align: center;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      .sp-slide-item { flex: 0 0 45%; } /* Desktop: mostra 45% */
+    }
+    .sp-slide-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .sp-slider-nav {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-light, #555);
+      margin-top: -1rem;
+      opacity: 0.7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    /* Estilos dos botões do slider */
+    .sp-slider-btn {
+      display: none; /* Escondido por padrão (mobile-first) */
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: var(--ink, #333);
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    .sp-slider-btn:hover {
+      background: var(--choque, #e61580);
+      color: #fff;
+      transform: translateY(-50%) scale(1.1);
+    }
+    .sp-slider-btn--prev { left: 1rem; }
+    .sp-slider-btn--next { right: 1rem; }
+
+    @media (min-width: 1024px) { /* Mostra apenas em telas maiores */
+      .sp-slider-btn { display: flex; align-items: center; justify-content: center; }
+      .sp-slider-nav { display: none; /* Esconde o "deslize para ver" no desktop */ }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header id="hdr">
+    <div class="wrap">
+      <a href="index.html" class="logo">Miranda<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#categorias">Serviços</a></li>
+        <li><a href="pack-adesivos.html" style="color:var(--choque);">Pack Adesivos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://pay.kiwify.com.br/HF4T88k" target="_blank" class="nav-cta">Quero meu Pack</a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section class="sp-hero">
+      <div class="sp-particles" aria-hidden="true">
+        <span class="sp-particle"></span>
+        <span class="sp-particle"></span>
+        <span class="sp-particle"></span>
+        <span class="sp-particle"></span>
+        <span class="sp-particle"></span>
+      </div>
+
+      <div class="wrap">
+
+        <div data-sr="up">
+          <p class="sp-hero-eyebrow">Miranda Studio — Novidade</p>
+          <h1 class="sp-hero-h1">
+            <span class="script-word">seu estilo,</span>
+            em cada <em>adesivo</em>
+          </h1>
+          <p class="sp-hero-desc">
+            Packs de adesivos digitais com alta estética, criados à mão para marcas e pessoas que querem se expressar com personalidade — no WhatsApp, redes sociais e além.
+          </p>
+          <div class="sp-hero-btns">
+            <a href="https://pay.kiwify.com.br/HF4T88k" target="_blank" class="btn btn-primary">
+              Quero meu Pack
+              <svg width="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#como-funciona" class="btn btn-outline-dark">Como funciona</a>
+          </div>
+          <div class="sp-trust-row">
+            <div class="sp-trust-item">
+              <span class="sp-trust-num">+600</span>
+              <span class="sp-trust-label">Projetos entregues</span>
+            </div>
+            <div class="sp-trust-item">
+              <span class="sp-trust-num">100%</span>
+              <span class="sp-trust-label">Digital & Imediato</span>
+            </div>
+            <div class="sp-trust-item">
+              <span class="sp-trust-num">Alta</span>
+              <span class="sp-trust-label">Estética garantida</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sp-hero-visual" data-sr="right">
+          <div class="sp-hero-tag">✦ Pack Digital</div>
+          <div class="sp-hero-img-main">
+            <img
+              src="https://i.ibb.co/FL8zY420/Adesivos-20260318-183412-0000.png"
+              alt="Pack de Adesivos Miranda Studio"
+            />
+          </div>
+          <div class="sp-hero-img-sec">
+            <img
+              src="https://i.ibb.co/23FwFJjh/2-20260315-214426-0000.png"
+              alt="Preview dos adesivos"
+            />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ O QUE SÃO ══ -->
+    <section class="sp-section sp-section--alt">
+      <div class="wrap">
+        <div class="sp-section-header" data-sr="up">
+          <p class="sp-eyebrow">O produto</p>
+          <h2 class="sp-sec-title">O que são os <em>Packs</em>?</h2>
+          <p class="sp-sec-sub">
+            Adesivos digitais são figurinhas de alta qualidade que você importa no WhatsApp, Telegram e outras plataformas — transformando cada mensagem em uma extensão da sua marca ou personalidade.
+          </p>
+        </div>
+
+        <!-- Slider de Imagens -->
+        <div class="sp-slider-wrap" data-sr="up">
+          <button class="sp-slider-btn sp-slider-btn--prev" aria-label="Anterior"><i class="ph ph-caret-left"></i></button>
+          <div class="sp-slider">
+            <div class="sp-slide-item">
+              <img src="https://i.ibb.co/23FwFJjh/2-20260315-214426-0000.png" alt="Preview Pack 1" loading="lazy">
+            </div>
+            <div class="sp-slide-item">
+              <img src="https://i.ibb.co/dwvyjhbg/1773626115301.png" alt="Preview Pack 2" loading="lazy">
+            </div>
+            <div class="sp-slide-item">
+              <img src="https://i.ibb.co/23FwFJjh/2-20260315-214426-0000.png" alt="Preview Pack 3" loading="lazy">
+            </div>
+          </div>
+          <button class="sp-slider-btn sp-slider-btn--next" aria-label="Próximo"><i class="ph ph-caret-right"></i></button>
+          <div class="sp-slider-nav">
+            <i class="ph ph-hand-swipe-left"></i> Deslize para ver mais
+          </div>
+        </div>
+
+        <!-- Destaques rápidos -->
+        <div class="cat-info-grid" data-stag style="margin-top: 3rem;">
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph ph-fill ph-sticker"></i></div>
+            <h3 class="cat-card-title">Alta Estética</h3>
+            <p class="cat-card-p">Cada adesivo é desenhado com cuidado, seguindo tendências visuais e o estilo único da Miranda Studio.</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph ph-fill ph-device-mobile"></i></div>
+            <h3 class="cat-card-title">Fácil de usar</h3>
+            <p class="cat-card-p">Você recebe o arquivo pronto para importar direto no WhatsApp, Telegram ou baixar para suas redes.</p>
+          </div>
+          <div class="cat-card">
+            <div class="cat-card-icon"><i class="ph ph-fill ph-paint-brush"></i></div>
+            <h3 class="cat-card-title">Nichos Específicos</h3>
+            <p class="cat-card-p">Packs já prontos, desenvolvidos pensando em nichos específicos. Design profissional e imediato para sua marca.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+  <footer>
+    <div class="footer-inner wrap">
+      <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+        <div class="footer-social">
+          <a href="https://pin.it/7nF3Hr7AJ" target="_blank" class="soc" aria-label="Pinterest"><i class="ph ph-pinterest-logo" style="font-size: 1.2rem;"></i></a>
+          <a href="https://www.tiktok.com/@mirandastudiocriativo?_r=1&_t=ZS-94j1YK6iGx8" target="_blank" class="soc" aria-label="TikTok"><i class="ph ph-tiktok-logo" style="font-size: 1.2rem;"></i></a>
+          <a href="https://www.instagram.com/mirandastudiocriativo/" target="_blank" class="soc" aria-label="Instagram"><i class="ph ph-instagram-logo" style="font-size: 1.2rem;"></i></a>
+          <a href="https://wa.me/558499477550" target="_blank" class="soc" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo" style="font-size: 1.2rem;"></i></a>
+        </div>
+      </div>
+      <div class="footer-base">
+        <div class="footer-base-row">
+          <p>© 2026 <strong>Miranda Studio</strong>. Todos os direitos reservados.</p>
+          <p>Contato: <a href="/cdn-cgi/l/email-protection#ea8886858d8b848e98838783988b848e8baa8d878b8386c4898587"><span class="__cf_email__" data-cfemail="84e6e8ebe3e5eae0f6ede9edf6e5eae0e5c4e3e9e5ede8aae7ebe9">[email&#160;protected]</span></a></p>
+          <p><a href="index.html" style="color:var(--choque);font-weight:700;">← Voltar ao site principal</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+  <script>
+    // Scroll reveal para esta página
+    const srObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('vis');
+          srObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('[data-sr], [data-stag]').forEach(el => srObs.observe(el));
+  </script>
+  <script>
+    // Slider com setas
+    const sliderWrap = document.querySelector('.sp-slider-wrap');
+    if (sliderWrap) {
+      const slider = sliderWrap.querySelector('.sp-slider');
+      const prevBtn = sliderWrap.querySelector('.sp-slider-btn--prev');
+      const nextBtn = sliderWrap.querySelector('.sp-slider-btn--next');
+
+      const scrollSlider = (direction) => {
+        // Rola 80% da largura visível do container do slider
+        const scrollAmount = slider.clientWidth * 0.8;
+        slider.scrollBy({
+          left: direction * scrollAmount,
+          behavior: 'sm
