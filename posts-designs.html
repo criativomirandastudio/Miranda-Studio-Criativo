@@ -40,10 +40,25 @@
             <a href="#detalhes" class="btn btn-creme">Ver Portfólio <i class="ph-bold ph-arrow-down"></i></a>
           </div>
         </div>
-        <div class="page-hero-visual" data-sr="right" style="border-radius:24px; box-shadow:0 25px 50px -12px rgba(0,0,0,0.15); overflow:hidden;">
-          <video autoplay muted loop playsinline style="width:100%; height:auto; display:block;">
-            <source src="https://res.cloudinary.com/de4v2la95/video/upload/InShot_20260317_204839934_1_nktdby.mp4" type="video/mp4">
-          </video>
+        <div class="page-hero-visual" data-sr="right" style="position: relative;">
+          <!-- Card de Vídeo -->
+          <div style="border-radius:24px; box-shadow:0 25px 50px -12px rgba(0,0,0,0.15); overflow:hidden; position: relative; z-index: 1;">
+            <video autoplay muted loop playsinline style="width:100%; height:auto; display:block;">
+              <source src="https://res.cloudinary.com/de4v2la95/video/upload/v1774084494/InShot_20260317_195921980_juuiha.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Cards Flutuantes (Animações/Ícones) -->
+          <div class="hero-float" style="position: absolute; top: 15%; left: -20px; z-index: 2; padding: 14px; border-radius: 16px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <i class="ph-fill ph-instagram-logo" style="font-size: 1.8rem; color: var(--choque, #e61580);"></i>
+          </div>
+          <div class="hero-float" style="position: absolute; bottom: 12%; right: -15px; z-index: 2; padding: 10px 18px; border-radius: 50px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 8px;">
+             <span style="width: 8px; height: 8px; background-color: var(--choque, #e61580); border-radius: 50%;"></span>
+             <span style="font-size: 0.85rem; font-weight: 600; color: #333;">Feed & Stories</span>
+          </div>
+          <div class="hero-float" style="position: absolute; top: -15px; right: 10%; z-index: 2; padding: 12px; border-radius: 14px; background: #fff; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
+             <i class="ph-fill ph-paint-brush" style="font-size: 1.4rem; color: var(--choque, #e61580);"></i>
+          </div>
         </div>
       </div>
     </section>
