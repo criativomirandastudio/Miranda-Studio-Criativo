@@ -1286,9 +1286,12 @@ footer::after {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .page-hero-visual { order: -1; height: 340px; margin-bottom: 2rem; animation: none; transform: none; width: 90%; margin-inline: auto; }
+  .page-hero-visual { order: -1; height: auto; margin-bottom: 3.5rem; animation: none; transform: none; width: 100%; max-width: 420px; margin-inline: auto; }
   .page-hero-visual:hover { transform: none; }
+  .page-hero-visual .hero-float { display: none; }
   .page-hero-text { text-align: center; }
+  .page-hero .hero-desc { margin-inline: auto; }
+  .pack-tags-container { justify-content: center; }
   .page-hero-btns { justify-content: center; }
 
   /* Ajustes Categorias */
